@@ -70,14 +70,29 @@ body {
   }
   
   .wrapper {
-    height: 200px;
-    width: 300px;
-    background-color: #E66A80;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    z-index: 0;
-    margin: 20px auto;
+  height: 200px;
+  width: 300px;
+  background-color: #E66A80;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  z-index: 0;
+  margin: 20px auto;
+
+  animation: glowEnvelope 2s infinite alternate;
+}
+
+@keyframes glowEnvelope {
+  from {
+    box-shadow: 0 0 10px #ff8fb3,
+                0 0 20px #ff6fa0,
+                0 0 30px #ff4f8c;
+  }
+  to {
+    box-shadow: 0 0 25px #ff8fb3,
+                0 0 45px #ff6fa0,
+                0 0 70px #ff4f8c;
+  }
 }
 
 .lid {
