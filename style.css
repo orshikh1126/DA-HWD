@@ -34,10 +34,10 @@ body {
   position: fixed;
   top: 20px;
   left: 20px;
-  width: 250px;      /* adjust size */
+  width: 250px;     
   height: auto;
-  z-index: 100000;  /* above background */
-  pointer-events: none; /* optional: prevents blocking clicks */
+  z-index: 100000; 
+  pointer-events: none;
 }
   
   
@@ -127,7 +127,7 @@ body {
     font-weight: bold;
     font-family: 'Pacifico', cursive;
 }
-/* clickable poster inside letter */
+
 .poster{
   width: 100%;
   height: 100%;
@@ -135,7 +135,7 @@ body {
   cursor: pointer;
 }
 
-/* fullscreen overlay viewer */
+
 .poster-viewer{
   position: fixed;
   inset: 0;
@@ -144,8 +144,8 @@ body {
   background: rgba(0,0,0,0.92);
   z-index: 999999;
 
-  display: none;        /* hidden */
-  place-items: center;  /* perfect center (grid) */
+  display: none;        
+  place-items: center; 
 }
 .poster-viewer{
   margin: 0;
@@ -154,7 +154,7 @@ body {
 }
 
 .poster-viewer.show{
-  display: grid;        /* show */
+  display: grid;      
 }
 
 .poster-large{
