@@ -29,6 +29,10 @@ body {
     text-align: center;
     font-weight: bold;
     animation:  pulseText 1.5s infinite alternate ease-in-out 3s;
+    font-size: 28px;     /* bigger text */
+  padding: 14px 28px;  /* makes button larger */
+  border-radius: 10px;
+
   }
   .logo{
   position: fixed;
