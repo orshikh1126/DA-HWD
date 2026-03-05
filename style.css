@@ -23,7 +23,7 @@ body {
     z-index: 999;
     position: absolute;
     color: white;
-    top: 40%;
+    top: 32%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -36,8 +36,8 @@ body {
   }
   .logo{
   position: fixed;
-  top: 20px;
-  left: 50px;
+  top: 35px;
+  left: 70px;
   width: 250px;     
   height: auto;
   z-index: 100000; 
