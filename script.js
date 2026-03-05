@@ -1,23 +1,21 @@
 onload = () => {
   document.body.classList.remove("container");
-};
 
-const wrapper = document.querySelector(".wrapper");
-const mysteryBtn = document.getElementById("mysteryBtn");
-const openBtn = document.getElementById("openBtn");
-const closeBtn = document.getElementById("closeBtn");
-
-mysteryBtn.addEventListener("click", () => {
-  mysteryBtn.style.display = "none";
-  wrapper.style.display = "flex";
-  document.querySelector(".buttons").style.display = "block";
+  // AUTO OPEN SEQUENCE
+  mysteryBtn.style.display = "none";     // hide button
+  wrapper.style.display = "flex";        // show envelope
 
   wrapper.style.opacity = "0";
   setTimeout(() => {
     wrapper.style.transition = "opacity 0.5s ease";
     wrapper.style.opacity = "1";
   }, 10);
-});
+
+  // open envelope automatically
+  setTimeout(() => {
+    wrapper.classList.add("open");
+  }, 1500);
+};
 
 openBtn.addEventListener("click", () => {
   wrapper.classList.add("open");
