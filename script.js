@@ -31,11 +31,10 @@ closeBtn.addEventListener("click", () => {
   openBtn.style.display = "inline-block";
 });
 
-/* ---------- Poster fullscreen viewer (ONLY ONE VERSION) ---------- */
-const posterImg = document.getElementById("posterImg");     // the small image inside letter
-const posterViewer = document.getElementById("posterViewer"); // fullscreen overlay (must be at end of body)
-const posterLarge = document.getElementById("posterLarge"); // large img inside overlay
-const posterClose = document.getElementById("posterClose"); // close button inside overlay
+const posterImg = document.getElementById("posterImg");     
+const posterViewer = document.getElementById("posterViewer"); 
+const posterLarge = document.getElementById("posterLarge");
+const posterClose = document.getElementById("posterClose");
 
 if (posterImg && posterViewer && posterLarge && posterClose) {
   posterImg.addEventListener("click", () => {
